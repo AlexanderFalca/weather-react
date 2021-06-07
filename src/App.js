@@ -89,7 +89,14 @@ function App() {
             </div>
           </div>
         ) : (
-          ''
+          <div>
+            <div className="location-box">
+              <div className="location" />
+            </div>
+            <div className="weather-box">
+              <div className="temp">Weather App</div>
+            </div>
+          </div>
         )}
       </main>
     </div>
