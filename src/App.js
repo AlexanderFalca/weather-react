@@ -16,10 +16,10 @@ function App() {
         .then((result) => {
           setQuery('');
           setWeather(result);
-          // console.log(result);
+          //  console.log(result);
         });
     }
-  }; // pega informaçẽs da api pela caixa de pesquisa.
+  };
 
   const dateBuilder = (d) => {
     const months = [
@@ -52,16 +52,15 @@ function App() {
     const year = d.getFullYear();
 
     return `${day} ${date} ${month} ${year}`;
-  }; // constroi data
+  };
 
-  // compara se a temperatura é maior q 20º p muda background
   return (
     <div
       className={
         typeof weather.main !== 'undefined'
           ? weather.main.temp > 20
             ? 'app warm'
-            : 'app'
+            : 'app cold'
           : 'app'
       }
     >
@@ -95,6 +94,6 @@ function App() {
       </main>
     </div>
   );
-} // constroi html
+}
 
 export default App;

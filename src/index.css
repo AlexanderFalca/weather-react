@@ -9,14 +9,18 @@ body {
   font-family: 'montseratt', sans-serif;
 }
 
-.app { 
-  background-image: url('https://api.adorable.io/avatars/face/5/7/9/009/abott@adorable.png');
+.app {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
   background-size: cover;
   background-position: bottom;
   transition: .4s ease-out;
 }
 .app.warm {
-  background-image: url('https://api.adorable.io/avatars/face/6/7/9/500/abott@adorable.png');
+  background-image: linear-gradient(to bottom, rgba(235, 10, 10, 0.938), rgba(235, 119, 10, 0.938));
+
+}
+.app.cold {
+  background-image: linear-gradient(to bottom, rgba(235, 10, 235, 0.938), rgba(10, 220, 235, 0.938));
 
 }
 
