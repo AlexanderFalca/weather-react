@@ -16,7 +16,7 @@ body {
   transition: .4s ease-out;
 }
 .app.warm {
-  background-image: linear-gradient(to bottom, rgba(235, 10, 10, 0.938), rgba(235, 119, 10, 0.938));
+  background-image: linear-gradient(to bottom, rgba(191, 64, 191, 0.938), rgba(255, 110, 0, 0.938));
 
 }
 .app.cold {

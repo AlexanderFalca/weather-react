@@ -58,7 +58,7 @@ function App() {
     <div
       className={
         typeof weather.main !== 'undefined'
-          ? weather.main.temp > 20
+          ? weather.main.temp > 16
             ? 'app warm'
             : 'app cold'
           : 'app'
@@ -89,13 +89,8 @@ function App() {
             </div>
           </div>
         ) : (
-          <div>
-            <div className="location-box">
-              <div className="location" />
-            </div>
-            <div className="weather-box">
-              <div className="temp">Weather App</div>
-            </div>
+          <div className="weather-box">
+            <div className="temp">Weather App</div>
           </div>
         )}
       </main>
